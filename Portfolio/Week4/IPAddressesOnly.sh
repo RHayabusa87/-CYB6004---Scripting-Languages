@@ -12,4 +12,4 @@ bash IPInfo.sh | sed -n '/IP Address/p'
 #p
 #}')
 
-#echo -e "The addresses of this computer are as follows:\n$All_IP_Addresses"
+#echo -e "The addresses of this computer are as follows:\n$All_IP_Addresses"s
