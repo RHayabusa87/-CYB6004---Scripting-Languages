@@ -1,7 +1,7 @@
 #!/bin/bash
- #get info about networking from the ifconfig command
+ #Get info about networking from the built-in Bash ifconfig command
  net_info="$(ifconfig)"
- #parse out the ip address lines using sed
+ #Parse out the ip address lines using sed
  addresses=$(echo "$net_info" | sed -n '/inet / {
  s/inet/IP Address:/
  s/netmask/\n\t\tSubnet Mask:/
